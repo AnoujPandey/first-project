@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ne" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>राजनीति समाचार | Saghuro Baato</title>
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/darkmode.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar__inner">
+      <div class="topbar__left"><span>📅 मंगलवार, असार १०, २०८२</span></div>
+      <div class="topbar__ticker-wrap">
+        <span class="topbar__badge">ब्रेकिङ</span>
+        <div class="ticker-container">
+          <div class="ticker-track">
+            <span class="ticker-item">प्रधानमन्त्रीले बजेट सत्रमा नयाँ नीति घोषणा गर्दै</span>
+            <span class="ticker-item">संसद बैठक आजदेखि सुरु</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container">
+    <div class="site-header__inner">
+      <a href="../index.html" class="site-logo">
+        <span class="site-logo__name">Saghuro Baato</span>
+        <span class="site-logo__nepali nepali">सघुरो बाटो</span>
+        <span class="site-logo__tagline nepali">सत्य समाचार, सही बाटो</span>
+      </a>
+      <div class="site-header__actions">
+        <button class="btn-search" id="search-open">🔍</button>
+        <button class="btn-darkmode" id="darkmode-toggle">☾ Dark</button>
+        <button class="btn-hamburger" id="mobile-menu-open" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li><a href="../index.html" class="main-nav__link nepali">मुख्य पृष्ठ</a></li>
+        <li><a href="category.html?cat=politics" class="main-nav__link nepali active">राजनीति</a></li>
+        <li><a href="category.html?cat=business" class="main-nav__link nepali">अर्थ</a></li>
+        <li><a href="category.html?cat=sports" class="main-nav__link nepali">खेलकुद</a></li>
+        <li><a href="category.html?cat=tech" class="main-nav__link nepali">प्रविधि</a></li>
+        <li><a href="category.html?cat=entertainment" class="main-nav__link nepali">मनोरञ्जन</a></li>
+        <li><a href="category.html?cat=world" class="main-nav__link nepali">विश्व</a></li>
+        <li><a href="category.html?cat=opinion" class="main-nav__link nepali">विचार</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<nav id="mobile-menu" class="mobile-menu">
+  <button id="mobile-menu-close" class="mobile-menu__close">✕</button>
+  <ul class="mobile-menu__list">
+    <li><a href="../index.html" class="mobile-menu__link">मुख्य पृष्ठ</a></li>
+    <li><a href="category.html?cat=politics" class="mobile-menu__link">राजनीति</a></li>
+  </ul>
+</nav>
+
+<!-- SEARCH OVERLAY -->
+<div id="search-overlay" class="search-overlay">
+  <div class="search-overlay__box">
+    <input type="search" id="search-input" class="search-overlay__input" placeholder="समाचार खोज्नुहोस्…">
+    <button id="search-close" style="position:absolute;top:1rem;right:1rem;font-size:1.5rem;background:none;border:none;cursor:pointer;">✕</button>
+  </div>
+</div>
+
+<main id="main-content" class="page-main">
+  <div class="container">
+
+    <!-- Category header -->
+    <div style="margin-bottom:var(--space-6);padding-bottom:var(--space-4);
+                border-bottom:3px solid var(--cat-politics)">
+      <div style="display:flex;align-items:center;gap:var(--space-3)">
+        <span style="font-size:2rem">🏛</span>
+        <div>
+          <h1 style="font-size:var(--text-3xl);font-weight:700" class="nepali">राजनीति</h1>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted)">
+            नेपाल र विश्वका राजनीतिक समाचार · <span id="article-count">१२४</span> समाचार
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout-two-col">
+
+      <!-- Articles list -->
+      <div>
+        <!-- Featured in category -->
+        <a href="article.html" class="hero-card" style="margin-bottom:var(--space-6);min-height:280px">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1e3a8a,#1d4ed8);display:flex;align-items:center;justify-content:center;font-size:5rem;opacity:0.15">🏛</div>
+          <div class="hero-card__overlay"></div>
+          <div class="hero-card__body">
+            <span class="hero-card__cat">मुख्य</span>
+            <h2 class="hero-card__title nepali">
+              संसदमा विशेष सत्र: बजेटमाथि तीव्र बहस, विपक्षीले गरे वाकआउट
+            </h2>
+            <div class="hero-card__meta">
+              <span>३ घन्टा अगाडि</span> · <span>८ मिनेट पढ्नुस्</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Grid of news cards -->
+        <div class="layout-three-col" style="margin-bottom:var(--space-6)">
+          <a href="article.html" class="news-card">
+            <div class="news-card__img-wrap"><div class="news-card__img-placeholder">📜</div></div>
+            <div class="news-card__body">
+              <div class="news-card__cat"><span class="cat-tag politics">राजनीति</span></div>
+              <h3 class="news-card__title nepali">नयाँ मन्त्रिपरिषद् गठनको प्रक्रिया सुरु</h3>
+              <div class="news-card__meta"><span>१ घन्टा</span></div>
+            </div>
+          </a>
+          <a href="article.html" class="news-card">
+            <div class="news-card__img-wrap"><div class="news-card__img-placeholder">🗳</div></div>
+            <div class="news-card__body">
+              <div class="news-card__cat"><span class="cat-tag politics">राजनीति</span></div>
+              <h3 class="news-card__title nepali">स्थानीय निर्वाचन: मिति घोषणाको तयारी</h3>
+              <div class="news-card__meta"><span>२ घन्टा</span></div>
+            </div>
+          </a>
+          <a href="article.html" class="news-card">
+            <div class="news-card__img-wrap"><div class="news-card__img-placeholder">🤝</div></div>
+            <div class="news-card__body">
+              <div class="news-card__cat"><span class="cat-tag politics">राजनीति</span></div>
+              <h3 class="news-card__title nepali">दलहरू बीच नयाँ गठबन्धनको सम्भावना</h3>
+              <div class="news-card__meta"><span>४ घन्टा</span></div>
+            </div>
+          </a>
+          <a href="article.html" class="news-card">
+            <div class="news-card__img-wrap"><div class="news-card__img-placeholder">📊</div></div>
+            <div class="news-card__body">
+              <div class="news-card__cat"><span class="cat-tag politics">राजनीति</span></div>
+              <h3 class="news-card__title nepali">जनमत सर्वेक्षण: सरकारको लोकप्रियता घट्दो</h3>
+              <div class="news-card__meta"><span>५ घन्टा</span></div>
+            </div>
+          </a>
+          <a href="article.html" class="news-card">
+            <div class="news-card__img-wrap"><div class="news-card__img-placeholder">🌐</div></div>
+            <div class="news-card__body">
+              <div class="news-card__cat"><span class="cat-tag politics">राजनीति</span></div>
+              <h3 class="news-card__title nepali">भारत-चीन सम्बन्धमा नेपालको कूटनीतिक नीति</h3>
+              <div class="news-card__meta"><span>हिजो</span></div>
+            </div>
+          </a>
+          <a href="article.html" class="news-card">
+            <div class="news-card__img-wrap"><div class="news-card__img-placeholder">🏢</div></div>
+            <div class="news-card__body">
+              <div class="news-card__cat"><span class="cat-tag politics">राजनीति</span></div>
+              <h3 class="news-card__title nepali">प्रदेश सरकारको बजेट: विकासमा जोड</h3>
+              <div class="news-card__meta"><span>हिजो</span></div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="Pagination" style="display:flex;gap:var(--space-2);justify-content:center">
+          <a href="#" style="padding:var(--space-2) var(--space-3);border:1px solid var(--color-border);
+             border-radius:var(--radius-sm);font-size:var(--text-sm);background:var(--brand-red);color:white">१</a>
+          <a href="#" style="padding:var(--space-2) var(--space-3);border:1px solid var(--color-border);
+             border-radius:var(--radius-sm);font-size:var(--text-sm)">२</a>
+          <a href="#" style="padding:var(--space-2) var(--space-3);border:1px solid var(--color-border);
+             border-radius:var(--radius-sm);font-size:var(--text-sm)">३</a>
+          <a href="#" style="padding:var(--space-2) var(--space-3);border:1px solid var(--color-border);
+             border-radius:var(--radius-sm);font-size:var(--text-sm)">अर्को →</a>
+        </nav>
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <div class="sidebar-widget__header">
+            <span class="sidebar-widget__title">🔥 धेरै पढिएका</span>
+          </div>
+          <div class="sidebar-widget__body">
+            <ol class="most-read-list">
+              <li class="most-read-item">
+                <span class="most-read-item__num">01</span>
+                <div><a href="article.html" class="most-read-item__title nepali">बजेटले गरिब जनतालाई राहत दिन सकेन</a></div>
+              </li>
+              <li class="most-read-item">
+                <span class="most-read-item__num">02</span>
+                <div><a href="article.html" class="most-read-item__title nepali">नयाँ मन्त्रिपरिषद् गठनको प्रक्रिया</a></div>
+              </li>
+              <li class="most-read-item">
+                <span class="most-read-item__num">03</span>
+                <div><a href="article.html" class="most-read-item__title nepali">विपक्षको वाकआउट: के हुन्छ अब?</a></div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div>
+        <div class="site-footer__brand-name">Saghuro Baato</div>
+        <div class="site-footer__tagline nepali">सत्य समाचार, सही बाटो</div>
+      </div>
+      <div>
+        <div class="site-footer__col-title">विभाग</div>
+        <a href="category.html?cat=politics" class="site-footer__link">राजनीति</a>
+        <a href="category.html?cat=sports" class="site-footer__link">खेलकुद</a>
+      </div>
+      <div>
+        <div class="site-footer__col-title">साइट</div>
+        <a href="about.html" class="site-footer__link">हाम्रोबारे</a>
+        <a href="contact.html" class="site-footer__link">सम्पर्क</a>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© २०८२ Saghuro Baato</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/darkmode.js"></script>
+<script src="../js/ticker.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/mobilemenu.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>

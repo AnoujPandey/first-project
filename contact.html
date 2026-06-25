@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ne" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>सम्पर्क | Saghuro Baato</title>
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/darkmode.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<div class="topbar"><div class="container"><div class="topbar__inner">
+  <div class="topbar__left"><span>📅 मंगलवार, असार १०, २०८२</span></div>
+</div></div></div>
+
+<header class="site-header"><div class="container">
+  <div class="site-header__inner">
+    <a href="../index.html" class="site-logo">
+      <span class="site-logo__name">Saghuro Baato</span>
+      <span class="site-logo__nepali nepali">सघुरो बाटो</span>
+    </a>
+    <div class="site-header__actions">
+      <button class="btn-darkmode" id="darkmode-toggle">☾ Dark</button>
+    </div>
+  </div>
+</div></header>
+
+<main id="main-content" class="page-main">
+  <div class="container" style="max-width:600px">
+    <h1 class="h2 nepali" style="margin-bottom:var(--space-6);padding-bottom:var(--space-3);border-bottom:3px solid var(--brand-red)">सम्पर्क गर्नुहोस्</h1>
+
+    <form onsubmit="return false" style="display:flex;flex-direction:column;gap:var(--space-4)">
+      <div>
+        <label style="display:block;font-size:var(--text-sm);font-weight:500;margin-bottom:var(--space-2)" class="nepali">पूरा नाम</label>
+        <input type="text" placeholder="तपाईंको नाम">
+      </div>
+      <div>
+        <label style="display:block;font-size:var(--text-sm);font-weight:500;margin-bottom:var(--space-2)">Email</label>
+        <input type="email" placeholder="your@email.com">
+      </div>
+      <div>
+        <label style="display:block;font-size:var(--text-sm);font-weight:500;margin-bottom:var(--space-2)" class="nepali">विषय</label>
+        <input type="text" placeholder="विषय">
+      </div>
+      <div>
+        <label style="display:block;font-size:var(--text-sm);font-weight:500;margin-bottom:var(--space-2)" class="nepali">सन्देश</label>
+        <textarea rows="5" placeholder="तपाईंको सन्देश यहाँ लेख्नुहोस्…"></textarea>
+      </div>
+      <button type="submit" style="background:var(--brand-red);color:white;padding:var(--space-3) var(--space-6);
+              border-radius:var(--radius-md);font-weight:600;font-size:var(--text-base);
+              cursor:pointer;border:none;align-self:flex-start" class="nepali">
+        पठाउनुहोस्
+      </button>
+    </form>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="container">
+  <div class="site-footer__bottom"><span>© २०८२ Saghuro Baato</span></div>
+</div></footer>
+<script src="../js/darkmode.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

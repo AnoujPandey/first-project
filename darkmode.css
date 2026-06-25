@@ -1,0 +1,76 @@
+/* ============================================
+   SAGHURO BAATO — Dark Mode
+   ============================================ */
+
+/* Toggle button states */
+.btn-darkmode[data-mode="dark"]  { border-color: var(--brand-red); color: var(--brand-red); }
+.btn-darkmode[data-mode="light"] { border-color: var(--color-border); color: var(--color-text-secondary); }
+
+/* Dark mode overrides — everything flows from CSS variables set in
+   variables.css under [data-theme="dark"]. These rules handle the
+   few cases where we need explicit overrides beyond token swaps. */
+
+[data-theme="dark"] .site-footer {
+  background: #0A0A0A;
+  border-top-color: var(--brand-red);
+}
+
+[data-theme="dark"] .news-card,
+[data-theme="dark"] .hero-side-list,
+[data-theme="dark"] .opinion-card,
+[data-theme="dark"] .sidebar-widget {
+  background: var(--color-bg-secondary);
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .news-card:hover,
+[data-theme="dark"] .opinion-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+[data-theme="dark"] .topbar { background: #7F1D1D; }
+
+[data-theme="dark"] .hero-side-item:hover {
+  background: var(--color-bg-tertiary);
+}
+
+[data-theme="dark"] .newsletter-strip {
+  background: #7F1D1D;
+}
+
+[data-theme="dark"] .summary-box {
+  background: #3B0A0A;
+  border-left-color: var(--brand-red);
+}
+
+[data-theme="dark"] .why-box {
+  background: var(--color-bg-secondary);
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .topic-pill {
+  background: var(--color-bg-secondary);
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .topic-pill:hover {
+  background: #3B0A0A;
+}
+
+[data-theme="dark"] .main-nav { border-top-color: var(--color-border); }
+
+[data-theme="dark"] .poll-bar-bg { background: var(--color-bg-tertiary); }
+
+/* Smooth image dimming in dark mode */
+[data-theme="dark"] img { opacity: 0.85; }
+[data-theme="dark"] img:hover { opacity: 1; }
+
+/* Search overlay dark */
+[data-theme="dark"] .search-overlay__box {
+  background: var(--color-bg-secondary);
+}
+
+/* Mobile menu dark */
+[data-theme="dark"] .mobile-menu {
+  background: var(--color-bg-secondary);
+}

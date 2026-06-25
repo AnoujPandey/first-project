@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ne" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="सघुरो बाटो — सत्य समाचार, सही बाटो। नेपालको विश्वसनीय अनलाइन समाचार पोर्टल।">
+  <meta property="og:title" content="Saghuro Baato — सघुरो बाटो">
+  <meta property="og:description" content="सत्य समाचार, सही बाटो">
+  <meta property="og:type" content="website">
+  <title>Saghuro Baato | सघुरो बाटो — सत्य समाचार, सही बाटो</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/darkmode.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="assets/logos/favicon.png">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<!-- ══ TOPBAR + TICKER ══════════════════════════════════ -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar__inner">
+      <div class="topbar__left">
+        <span>📅 मंगलवार, असार १०, २०८२</span>
+        <span>🌤 काठमाडौं · 26°C</span>
+      </div>
+      <div class="topbar__ticker-wrap">
+        <span class="topbar__badge">ब्रेकिङ</span>
+        <div class="ticker-container" aria-live="polite" aria-label="Breaking news">
+          <div class="ticker-track">
+            <span class="ticker-item">प्रधानमन्त्रीले बजेट सत्रमा नयाँ नीति घोषणा गर्दै</span>
+            <span class="ticker-item">संसद बैठक आजदेखि सुरु — विपक्षको विरोध जारी</span>
+            <span class="ticker-item">नेपाल क्रिकेट: एसिया कप छनोटमा विजय</span>
+            <span class="ticker-item">शेयर बजार: नेप्से सूचकांक ४५ अंकले बढ्यो</span>
+            <span class="ticker-item">काठमाडौंमा डेंगुका बिरामी बढ्दो — स्वास्थ्य मन्त्रालयको सतर्कता</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ HEADER ══════════════════════════════════════════ -->
+<header class="site-header" role="banner">
+  <div class="container">
+    <div class="site-header__inner">
+
+      <a href="index.html" class="site-logo" aria-label="Saghuro Baato Home">
+        <span class="site-logo__name">Saghuro Baato</span>
+        <span class="site-logo__nepali nepali">सघुरो बाटो</span>
+        <span class="site-logo__tagline nepali">सत्य समाचार, सही बाटो</span>
+      </a>
+
+      <div class="site-header__right">
+        <div class="site-header__meta">
+          <span>Tuesday, June 24, 2026</span>
+        </div>
+        <div class="site-header__actions">
+          <button class="btn-search" id="search-open" aria-label="Search">🔍</button>
+          <button class="btn-darkmode" id="darkmode-toggle" aria-label="Toggle dark mode">☾ Dark</button>
+          <button class="btn-hamburger" id="mobile-menu-open" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Nav -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="index.html" class="main-nav__link nepali active">मुख्य पृष्ठ</a></li>
+        <li class="main-nav__item"><a href="pages/category.html?cat=politics" class="main-nav__link nepali">राजनीति</a></li>
+        <li class="main-nav__item"><a href="pages/category.html?cat=business" class="main-nav__link nepali">अर्थ</a></li>
+        <li class="main-nav__item"><a href="pages/category.html?cat=sports" class="main-nav__link nepali">खेलकुद</a></li>
+        <li class="main-nav__item"><a href="pages/category.html?cat=tech" class="main-nav__link nepali">प्रविधि</a></li>
+        <li class="main-nav__item"><a href="pages/category.html?cat=entertainment" class="main-nav__link nepali">मनोरञ्जन</a></li>
+        <li class="main-nav__item"><a href="pages/category.html?cat=world" class="main-nav__link nepali">विश्व</a></li>
+        <li class="main-nav__item"><a href="pages/category.html?cat=opinion" class="main-nav__link nepali">विचार</a></li>
+        <li class="main-nav__item"><a href="pages/category.html?cat=local" class="main-nav__link nepali">स्थानीय</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ══ MOBILE MENU ═════════════════════════════════════ -->
+<nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation">
+  <button id="mobile-menu-close" class="mobile-menu__close" aria-label="Close menu">✕</button>
+  <ul class="mobile-menu__list">
+    <li><a href="index.html" class="mobile-menu__link">मुख्य पृष्ठ</a></li>
+    <li><a href="pages/category.html?cat=politics" class="mobile-menu__link">राजनीति</a></li>
+    <li><a href="pages/category.html?cat=business" class="mobile-menu__link">अर्थ</a></li>
+    <li><a href="pages/category.html?cat=sports" class="mobile-menu__link">खेलकुद</a></li>
+    <li><a href="pages/category.html?cat=tech" class="mobile-menu__link">प्रविधि</a></li>
+    <li><a href="pages/category.html?cat=entertainment" class="mobile-menu__link">मनोरञ्जन</a></li>
+    <li><a href="pages/category.html?cat=world" class="mobile-menu__link">विश्व</a></li>
+    <li><a href="pages/category.html?cat=opinion" class="mobile-menu__link">विचार</a></li>
+    <li><a href="pages/category.html?cat=local" class="mobile-menu__link">स्थानीय</a></li>
+    <li><a href="pages/about.html" class="mobile-menu__link">हाम्रोबारे</a></li>
+    <li><a href="pages/contact.html" class="mobile-menu__link">सम्पर्क</a></li>
+  </ul>
+</nav>
+
+<!-- ══ SEARCH OVERLAY ══════════════════════════════════ -->
+<div id="search-overlay" class="search-overlay" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="search-overlay__box">
+    <input type="search" id="search-input" class="search-overlay__input"
+           placeholder="समाचार खोज्नुहोस्…" aria-label="Search news">
+    <button id="search-close" style="position:absolute;top:1rem;right:1rem;font-size:1.5rem;
+            background:none;border:none;cursor:pointer;color:var(--color-text-secondary)">✕</button>
+  </div>
+</div>
+
+<!-- ══ MAIN CONTENT ════════════════════════════════════ -->
+<main id="main-content" class="page-main">
+  <div class="container">
+
+    <!-- TRENDING TOPICS -->
+    <div class="trending-topics" aria-label="Trending topics">
+      <span class="trending-topics__label">ट्रेन्डिङ:</span>
+      <a href="#" class="topic-pill">बजेट २०८२</a>
+      <a href="#" class="topic-pill">क्रिकेट</a>
+      <a href="#" class="topic-pill">संसद बैठक</a>
+      <a href="#" class="topic-pill">डेंगु</a>
+      <a href="#" class="topic-pill">नेप्से</a>
+      <a href="#" class="topic-pill">विश्वकप</a>
+      <a href="#" class="topic-pill">आईपीएल</a>
+      <a href="#" class="topic-pill">जलवायु</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" aria-label="Featured news">
+
+      <!-- Big hero card -->
+      <a href="pages/article.html" class="hero-card">
+        <img src="assets/images/hero-placeholder.jpg"
+             alt="संसद भवन" class="hero-card__img"
+             onerror="this.style.display='none'">
+        <div class="hero-card__overlay"></div>
+        <div class="hero-card__body">
+          <span class="hero-card__cat">मुख्य समाचार</span>
+          <h1 class="hero-card__title nepali">
+            संसदमा विशेष सत्र: बजेटमाथि तीव्र बहस, विपक्षीले गरे वाकआउट
+          </h1>
+          <p class="hero-card__excerpt nepali">
+            सरकारले पेश गरेको बजेटमाथि विपक्षी दलले कडा आपत्ति जनाउँदै सदनबाट वाकआउट गरेका छन्।
+          </p>
+          <div class="hero-card__meta">
+            <span data-timestamp="2026-06-24T10:00:00">३ घन्टा अगाडि</span>
+            <span>·</span>
+            <span>सघुरो बाटो संवाददाता</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Side list -->
+      <div class="hero-side-list" role="list">
+        <a href="pages/article.html" class="hero-side-item" role="listitem">
+          <img src="assets/images/news-placeholder.jpg" alt="" class="hero-side-item__img"
+               onerror="this.style.display='none'">
+          <div class="hero-side-item__body">
+            <div class="hero-side-item__cat">खेलकुद</div>
+            <div class="hero-side-item__title nepali">नेपाल क्रिकेट टिम एसिया कपका लागि छनोट</div>
+            <div class="hero-side-item__meta" data-timestamp="2026-06-24T11:00:00">२ घन्टा अगाडि</div>
+          </div>
+        </a>
+        <a href="pages/article.html" class="hero-side-item" role="listitem">
+          <img src="assets/images/news-placeholder.jpg" alt="" class="hero-side-item__img"
+               onerror="this.style.display='none'">
+          <div class="hero-side-item__body">
+            <div class="hero-side-item__cat">अर्थ</div>
+            <div class="hero-side-item__title nepali">शेयर बजार: नेप्से सूचकांक ४५ अंकले बढ्यो</div>
+            <div class="hero-side-item__meta" data-timestamp="2026-06-24T12:00:00">१ घन्टा अगाडि</div>
+          </div>
+        </a>
+        <a href="pages/article.html" class="hero-side-item" role="listitem">
+          <img src="assets/images/news-placeholder.jpg" alt="" class="hero-side-item__img"
+               onerror="this.style.display='none'">
+          <div class="hero-side-item__body">
+            <div class="hero-side-item__cat">विश्व</div>
+            <div class="hero-side-item__title nepali">हर्मुज जलसन्धि तनाव: तेल बजारमा उथलपुथल</div>
+            <div class="hero-side-item__meta" data-timestamp="2026-06-24T09:00:00">४ घन्टा अगाडि</div>
+          </div>
+        </a>
+        <a href="pages/article.html" class="hero-side-item" role="listitem">
+          <img src="assets/images/news-placeholder.jpg" alt="" class="hero-side-item__img"
+               onerror="this.style.display='none'">
+          <div class="hero-side-item__body">
+            <div class="hero-side-item__cat">स्वास्थ्य</div>
+            <div class="hero-side-item__title nepali">डेंगु संक्रमण बढ्दो, स्वास्थ्य मन्त्रालयको सतर्कता</div>
+            <div class="hero-side-item__meta" data-timestamp="2026-06-24T08:00:00">५ घन्टा अगाडि</div>
+          </div>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- ── TWO-COLUMN LAYOUT ── -->
+    <div class="layout-two-col">
+
+      <!-- LEFT: Main content -->
+      <div>
+
+        <!-- LATEST NEWS -->
+        <section class="section" aria-labelledby="latest-heading">
+          <div class="section__header">
+            <div class="section__header-left">
+              <span class="section__title-bar" aria-hidden="true"></span>
+              <h2 class="section__title" id="latest-heading">ताजा समाचार</h2>
+            </div>
+            <a href="pages/category.html" class="section__more">सबै हेर्नुहोस् →</a>
+          </div>
+
+          <div class="layout-three-col">
+
+            <a href="pages/article.html" class="news-card">
+              <div class="news-card__img-wrap">
+                <div class="news-card__img-placeholder">🏛</div>
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__cat"><span class="cat-tag politics">राजनीति</span></div>
+                <h3 class="news-card__title nepali">नयाँ मन्त्रिपरिषद् गठनको प्रक्रिया सुरु, तीन दल बीच वार्ता</h3>
+                <div class="news-card__meta">
+                  <span data-timestamp="2026-06-24T12:00:00">१ घन्टा</span>
+                  <span class="dot">·</span>
+                  <span>५ मिनेट पढ्नुस्</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="pages/article.html" class="news-card">
+              <div class="news-card__img-wrap">
+                <div class="news-card__img-placeholder">💰</div>
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__cat"><span class="cat-tag business">अर्थ</span></div>
+                <h3 class="news-card__title nepali">विदेशी लगानी १५ प्रतिशतले बढ्यो, पर्यटन क्षेत्रमा नयाँ अवसर</h3>
+                <div class="news-card__meta">
+                  <span data-timestamp="2026-06-24T11:00:00">२ घन्टा</span>
+                  <span class="dot">·</span>
+                  <span>३ मिनेट पढ्नुस्</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="pages/article.html" class="news-card">
+              <div class="news-card__img-wrap">
+                <div class="news-card__img-placeholder">🏏</div>
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__cat"><span class="cat-tag sports">खेलकुद</span></div>
+                <h3 class="news-card__title nepali">विश्वकप फुटबल: जर्मनी र स्पेन क्वार्टरफाइनलमा</h3>
+                <div class="news-card__meta">
+                  <span data-timestamp="2026-06-24T10:00:00">३ घन्टा</span>
+                  <span class="dot">·</span>
+                  <span>४ मिनेट पढ्नुस्</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="pages/article.html" class="news-card">
+              <div class="news-card__img-wrap">
+                <div class="news-card__img-placeholder">💻</div>
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__cat"><span class="cat-tag tech">प्रविधि</span></div>
+                <h3 class="news-card__title nepali">युवा उद्यमीले बनाए 'मेड इन नेपाल' इलेक्ट्रिक बस</h3>
+                <div class="news-card__meta">
+                  <span data-timestamp="2026-06-24T09:00:00">४ घन्टा</span>
+                  <span class="dot">·</span>
+                  <span>६ मिनेट पढ्नुस्</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="pages/article.html" class="news-card">
+              <div class="news-card__img-wrap">
+                <div class="news-card__img-placeholder">🌍</div>
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__cat"><span class="cat-tag world">विश्व</span></div>
+                <h3 class="news-card__title nepali">संयुक्त राष्ट्रसंघको जलवायु बैठकमा नेपालको माग</h3>
+                <div class="news-card__meta">
+                  <span data-timestamp="2026-06-24T08:00:00">५ घन्टा</span>
+                  <span class="dot">·</span>
+                  <span>५ मिनेट पढ्नुस्</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="pages/article.html" class="news-card">
+              <div class="news-card__img-wrap">
+                <div class="news-card__img-placeholder">🎭</div>
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__cat"><span class="cat-tag entertainment">मनोरञ्जन</span></div>
+                <h3 class="news-card__title nepali">नेपाली चलचित्र 'लुट ३' ले तोड्यो कमाइको रेकर्ड</h3>
+                <div class="news-card__meta">
+                  <span data-timestamp="2026-06-24T07:00:00">६ घन्टा</span>
+                  <span class="dot">·</span>
+                  <span>२ मिनेट पढ्नुस्</span>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </section>
+
+        <!-- OPINION SECTION -->
+        <section class="section" aria-labelledby="opinion-heading">
+          <div class="section__header">
+            <div class="section__header-left">
+              <span class="section__title-bar" aria-hidden="true"></span>
+              <h2 class="section__title" id="opinion-heading">विचार / Opinion</h2>
+            </div>
+            <a href="pages/category.html?cat=opinion" class="section__more">सबै →</a>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:var(--space-3)">
+
+            <a href="pages/article.html" class="opinion-card">
+              <div class="opinion-card__avatar" style="background:#B91C1C">रप</div>
+              <div class="opinion-card__body">
+                <div class="opinion-card__author">रमेश पौडेल</div>
+                <div class="opinion-card__title nepali">लोकतन्त्रको संकट र युवा नेतृत्वको आवश्यकता</div>
+                <div class="opinion-card__meta">आज · ८ मिनेट पढ्नुस्</div>
+              </div>
+            </a>
+
+            <a href="pages/article.html" class="opinion-card">
+              <div class="opinion-card__avatar" style="background:#0F6E56">सश</div>
+              <div class="opinion-card__body">
+                <div class="opinion-card__author">सुजाता श्रेष्ठ</div>
+                <div class="opinion-card__title nepali">नेपालको अर्थतन्त्र: आशा र चुनौतीको सन्तुलन</div>
+                <div class="opinion-card__meta">हिजो · ६ मिनेट पढ्नुस्</div>
+              </div>
+            </a>
+
+            <a href="pages/article.html" class="opinion-card">
+              <div class="opinion-card__avatar" style="background:#534AB7">दि</div>
+              <div class="opinion-card__body">
+                <div class="opinion-card__author">दिपक थापा</div>
+                <div class="opinion-card__title nepali">जलवायु परिवर्तन र हिमालयको भविष्य: हाम्रो जिम्मेवारी</div>
+                <div class="opinion-card__meta">२ दिन अगाडि · ५ मिनेट पढ्नुस्</div>
+              </div>
+            </a>
+
+          </div>
+        </section>
+
+        <!-- NEWSLETTER STRIP -->
+        <div class="newsletter-strip" role="complementary" aria-label="Newsletter signup">
+          <div>
+            <h2 class="newsletter-strip__title">दैनिक समाचार पाउनुहोस्</h2>
+            <p class="newsletter-strip__sub nepali">
+              हरेक बिहान महत्त्वपूर्ण समाचार सीधा तपाईंको इनबक्समा।
+            </p>
+          </div>
+          <div>
+            <form class="newsletter-form" onsubmit="return false" aria-label="Email subscription">
+              <input type="email" placeholder="तपाईंको इमेल" aria-label="Email address">
+              <button class="btn-newsletter" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: Sidebar -->
+      <aside class="sidebar" aria-label="Sidebar">
+
+        <!-- Most Read -->
+        <div class="sidebar-widget">
+          <div class="sidebar-widget__header">
+            <span class="sidebar-widget__title">🔥 धेरै पढिएका</span>
+          </div>
+          <div class="sidebar-widget__body">
+            <ol class="most-read-list">
+              <li class="most-read-item">
+                <span class="most-read-item__num">01</span>
+                <div>
+                  <a href="pages/article.html" class="most-read-item__title nepali">
+                    बजेटले गरिब जनतालाई राहत दिन सकेन — विज्ञको मत
+                  </a>
+                  <div class="most-read-item__meta">१२,४४५ पाठक</div>
+                </div>
+              </li>
+              <li class="most-read-item">
+                <span class="most-read-item__num">02</span>
+                <div>
+                  <a href="pages/article.html" class="most-read-item__title nepali">
+                    काठमाडौंमा हवाई गुणस्तर: चिन्ताजनक तथ्यांक सार्वजनिक
+                  </a>
+                  <div class="most-read-item__meta">९,२३१ पाठक</div>
+                </div>
+              </li>
+              <li class="most-read-item">
+                <span class="most-read-item__num">03</span>
+                <div>
+                  <a href="pages/article.html" class="most-read-item__title nepali">
+                    युवा उद्यमीले बनाए 'मेड इन नेपाल' इलेक्ट्रिक बस
+                  </a>
+                  <div class="most-read-item__meta">७,८९०  पाठक</div>
+                </div>
+              </li>
+              <li class="most-read-item">
+                <span class="most-read-item__num">04</span>
+                <div>
+                  <a href="pages/article.html" class="most-read-item__title nepali">
+                    विश्वकपमा नेपाली दर्शकको उत्साहजनक उपस्थिति
+                  </a>
+                  <div class="most-read-item__meta">६,१२० पाठक</div>
+                </div>
+              </li>
+              <li class="most-read-item">
+                <span class="most-read-item__num">05</span>
+                <div>
+                  <a href="pages/article.html" class="most-read-item__title nepali">
+                    नेपाल-भारत व्यापार सन्धि: नयाँ अध्याय सुरु
+                  </a>
+                  <div class="most-read-item__meta">४,५६७ पाठक</div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Poll -->
+        <div class="sidebar-widget" role="complementary" aria-label="Reader poll">
+          <div class="sidebar-widget__header">
+            <span class="sidebar-widget__title">📊 जनमत</span>
+          </div>
+          <div class="sidebar-widget__body">
+            <p class="poll-question nepali">नयाँ बजेटले देशको विकासमा सहयोग गर्छ?</p>
+
+            <div class="poll-option">
+              <div class="poll-option__label">
+                <span class="nepali">हो, निश्चित</span>
+                <span class="poll-option__pct">48%</span>
+              </div>
+              <div class="poll-bar-bg">
+                <div class="poll-bar" style="width:48%"></div>
+              </div>
+            </div>
+
+            <div class="poll-option">
+              <div class="poll-option__label">
+                <span class="nepali">होइन</span>
+                <span class="poll-option__pct" style="color:var(--gray-500)">31%</span>
+              </div>
+              <div class="poll-bar-bg">
+                <div class="poll-bar secondary" style="width:31%"></div>
+              </div>
+            </div>
+
+            <div class="poll-option">
+              <div class="poll-option__label">
+                <span class="nepali">थाहा छैन</span>
+                <span class="poll-option__pct" style="color:var(--gray-400)">21%</span>
+              </div>
+              <div class="poll-bar-bg">
+                <div class="poll-bar tertiary" style="width:21%"></div>
+              </div>
+            </div>
+
+            <p class="poll-meta">१,२४७ मतदाताहरू · आज मात्र</p>
+          </div>
+        </div>
+
+      </aside>
+
+    </div><!-- end two-col -->
+
+  </div><!-- end container -->
+</main>
+
+<!-- ══ FOOTER ════════════════════════════════════════ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="site-footer__grid">
+
+      <div>
+        <div class="site-footer__brand-name">Saghuro Baato</div>
+        <div class="site-footer__tagline nepali">सघुरो बाटो — सत्य समाचार, सही बाटो</div>
+        <p class="site-footer__desc">
+          नेपालको विश्वसनीय अनलाइन समाचार पोर्टल। तथ्यपरक, निष्पक्ष र समयमै समाचार।
+        </p>
+        <div class="site-footer__social">
+          <a href="#" class="site-footer__social-link" aria-label="Facebook">f</a>
+          <a href="#" class="site-footer__social-link" aria-label="Twitter/X">𝕏</a>
+          <a href="#" class="site-footer__social-link" aria-label="YouTube">▶</a>
+          <a href="#" class="site-footer__social-link" aria-label="Instagram">📷</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="site-footer__col-title">विभाग</div>
+        <a href="pages/category.html?cat=politics" class="site-footer__link">राजनीति</a>
+        <a href="pages/category.html?cat=business" class="site-footer__link">अर्थ / वाणिज्य</a>
+        <a href="pages/category.html?cat=sports" class="site-footer__link">खेलकुद</a>
+        <a href="pages/category.html?cat=tech" class="site-footer__link">प्रविधि</a>
+        <a href="pages/category.html?cat=entertainment" class="site-footer__link">मनोरञ्जन</a>
+        <a href="pages/category.html?cat=world" class="site-footer__link">विश्व</a>
+        <a href="pages/category.html?cat=opinion" class="site-footer__link">विचार</a>
+      </div>
+
+      <div>
+        <div class="site-footer__col-title">साइट</div>
+        <a href="pages/about.html"     class="site-footer__link">हाम्रोबारे</a>
+        <a href="pages/contact.html"   class="site-footer__link">सम्पर्क</a>
+        <a href="pages/advertise.html" class="site-footer__link">विज्ञापन</a>
+        <a href="pages/privacy.html"   class="site-footer__link">गोपनीयता नीति</a>
+        <a href="pages/terms.html"     class="site-footer__link">सेवा शर्तहरू</a>
+        <a href="pages/search.html"    class="site-footer__link">खोज्नुहोस्</a>
+      </div>
+
+    </div>
+
+    <div class="site-footer__bottom">
+      <span>© २०८२ Saghuro Baato · सर्वाधिकार सुरक्षित</span>
+      <span>Made with ❤ in Nepal</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ JS ════════════════════════════════════════════ -->
+<script src="js/darkmode.js"></script>
+<script src="js/ticker.js"></script>
+<script src="js/search.js"></script>
+<script src="js/mobilemenu.js"></script>
+<script src="js/bookmark.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
